@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Your Choice</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #764ba2;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>🍽️ Select Your Dish</h2>
+
+<form method="POST">
+
+<label>Budget:</label>
+<input type="number" name="budget" required>
+
+<label>Taste:</label>
+<select name="taste">
+    <option value="any">Any</option>
+    <option value="spicy">Spicy</option>
+    <option value="sweet">Sweet</option>
+    <option value="savory">Savory</option>
+    <option value="crispy">Crispy</option>
+    <option value="creamy">Creamy</option>
+    <option value="cheesy">Cheesy</option>
+</select>
+
+<label>Cuisine:</label>
+<select name="cuisine">
+    <option value="any">Any</option>
+    <option value="indian">Indian</option>
+    <option value="south indian">South Indian</option>
+    <option value="chinese">Chinese</option>
+    <option value="italian">Italian</option>
+    <option value="mexican">Mexican</option>
+    <option value="american">American</option>
+</select>
+
+<button type="submit">Get Suggestions 🍴</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
